@@ -103,7 +103,7 @@ open class INSPhotosViewController: UIViewController, UIPageViewControllerDataSo
     
     // MARK: - Private
     public private(set) var pageViewController: UIPageViewController!
-    public var dataSource: INSPhotosDataSource
+    public private(set) var dataSource: INSPhotosDataSource
     
     public let interactiveAnimator: INSPhotosInteractionAnimator = INSPhotosInteractionAnimator()
     public let transitionAnimator: INSPhotosTransitionAnimator = INSPhotosTransitionAnimator()
