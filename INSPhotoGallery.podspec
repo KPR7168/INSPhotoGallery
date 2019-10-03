@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'INSPhotoGallery'
-  s.version  = '1.2.9'
+  s.version  = '1.2.10'
   s.license  = 'Apache License, Version 2.0'
   s.summary  = 'INSPhotoGallery is a modern looking photo gallery written in Swift for iOS.'
-  s.homepage = 'https://github.com/inspace-io/INSPhotoGallery'
+  s.homepage = 'https://github.com/KPR7168/INSPhotoGallery'
   s.authors  = 'Michał Zaborowski'
-  s.source   = { :git => 'https://github.com/inspace-io/INSPhotoGallery.git', :tag => s.version.to_s }
+  s.source   = { :git => 'git@github.com:KPR7168/INSPhotoGallery.git', :tag => s.version.to_s }
   s.requires_arc = true
 
   s.ios.resource_bundle = { s.name => ['INSPhotoGallery/INSPhotoGallery.bundle/*'] }
