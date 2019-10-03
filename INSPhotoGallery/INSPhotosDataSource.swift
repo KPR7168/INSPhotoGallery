@@ -47,6 +47,10 @@ public struct INSPhotosDataSource {
         }
     }
     
+    public mutating func appendPhotos(_ photos: [INSPhotoViewable]) {
+        self.photos.append(contentsOf: photos)
+    }
+    
     public subscript(index: Int) -> INSPhotoViewable? {
         get {
             return photoAtIndex(index)

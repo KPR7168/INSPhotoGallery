@@ -271,6 +271,11 @@ open class INSPhotosViewController: UIViewController, UIPageViewControllerDataSo
             self.dismiss(animated: true, completion: nil)
         }
     }
+    
+    open func appendPhotos(_ photos: [INSPhotoViewable]) {
+        
+        self.dataSource.appendPhotos(photos)
+    }
 
     private func confirmPhotoDeletion(delete: @escaping () -> Void) {
         let alertController = UIAlertController(title: nil, message: "Are you sure you want to delete this photo?", preferredStyle: .alert)
