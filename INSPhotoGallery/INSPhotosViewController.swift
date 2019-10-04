@@ -275,6 +275,8 @@ open class INSPhotosViewController: UIViewController, UIPageViewControllerDataSo
     open func appendPhotos(_ photos: [INSPhotoViewable]) {
         
         self.dataSource.appendPhotos(photos)
+        self.pageViewController.dataSource = nil
+        self.pageViewController.dataSource = self
     }
 
     private func confirmPhotoDeletion(delete: @escaping () -> Void) {
